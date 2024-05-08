@@ -17,16 +17,18 @@ const PieChart = () => {
     ],
   };
 
-  const options = {
-    animations: {
-      duration: 1000,
-      easing: 'easeOutQuart',
-    },
-  };
+  const options = {};
 
   return (
-    <div>
-      <Pie data={data} />
+    <div className="w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center">
+      <Pie
+        data={data}
+        width={50}
+        height={50}
+        options={{
+          maintainAspectRatio: false,
+        }}
+      />
     </div>
   );
 };

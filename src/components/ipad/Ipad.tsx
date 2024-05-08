@@ -1,9 +1,11 @@
 "use client"
 
+import PieChart from "../pieChart/PieChart";
+
 
 const Ipad = () => {
   return (
-    <div className="w-[414px] h-[284px] bg-white rounded-3xl flex items-center justify-center">
+    <div className="w-[462px] h-[312px] bg-white rounded-3xl flex items-center justify-center shadow-lg">
       <div className="w-[82%] h-[90%] flex flex-row justify-between bg-tertiary rounded-md">
         <div className="h-[100%] w-[100%] border border-tertiary-alt flex flex-col items-center justify-center bg-tertiary">
           <div className="flex flex-row items-center w-[100%] justify-between row-span-4 bg-tertiary">
@@ -42,9 +44,7 @@ const Ipad = () => {
         <div className="border w-[100%] h-[100%] bg-white items-center justify-center flex flex-col">
           <div className="w-full items-center justify-center flex flex-col">
             <div className="bg-slate-400 rounded-t-xl w-[80%] h-[15px] my-1"></div>
-            <div className="flex items-center justify-center w-[30%] h-[30px]">
-              {/* <PieChart /> */}
-            </div>
+            <PieChart />
             <div className="bg-slate-300 rounded-b-xl w-[80%] h-[15px] my-1"></div>
           </div>
           <div className="w-full items-start justify-center flex flex-col my-3 pl-3">

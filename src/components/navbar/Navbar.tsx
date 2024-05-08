@@ -27,7 +27,7 @@ const Navbar: FC<Props> = ({}) => {
         <Link href={'/'} className={`${themes.navLink}`}>
           Developer
         </Link>
-        <Link href={'/'} className={`${themes.navLink}`}>
+        <Link href={'/accounts/login'} className={`${themes.navLink}`}>
           Sign in
         </Link>
       </div>
