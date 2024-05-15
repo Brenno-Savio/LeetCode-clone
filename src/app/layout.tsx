@@ -1,5 +1,3 @@
-import Background from '@/components/background/Background';
-import Navbar from '@/components/navbar/Navbar';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -27,10 +25,8 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className={inter.className}>
-        <Background />
-        <main className='w-screen h-screen z-0'>
-          <Navbar />
+      <body className={`${inter.className}`}>
+        <main className='z-0'>
           {children}
         </main>
       </body>
